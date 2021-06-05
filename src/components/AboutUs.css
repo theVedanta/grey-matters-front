@@ -1,0 +1,40 @@
+.about.about-container {
+    background-color: var(--grey);
+}
+
+.about.about-text{
+    text-align: center;
+    max-width: 40vw;
+    margin: 0 auto;
+    padding-top: 8vh
+}
+
+.about.headerText {
+    font-size: 3.5vw;
+}
+
+.about.para {
+    text-align: center;
+    margin-top: 3vh;
+    font-size: 1.2vw
+}
+
+.about.image-wrap {
+    margin-top: 8vh;
+    padding-bottom: 25vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about.about-image {
+    height: 35vh
+}
+
+.about.svg {
+  position: absolute;
+  /* bottom: 7vh; */
+  left: -25vw;
+  right: 1vw;
+  height: 80vh;
+  margin-top: 15vh;
+}

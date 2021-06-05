@@ -1,0 +1,19 @@
+/* :root {
+    --black: #252525;
+    --white: #FCFCFC;
+    --grey: #14191E;
+    --dgrey: #2C3036;
+} */
+
+.faq.faq-container {
+    background-color: var(--dgrey);
+}
+
+.faq.faq-wrap {    
+    margin-left: 10vw;
+    margin-top: 8vh
+}
+
+.faq.faq-header {    
+    font-size: 2.5vw;
+}

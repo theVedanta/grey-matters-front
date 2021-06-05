@@ -1,0 +1,32 @@
+import { Link } from "react-router-dom";
+import "./NavBar.css";
+
+function NavBar() {
+  return (
+    <nav className="container">
+      <h3 className="logo">Grey Matters</h3>
+      <div className="link-wrap">
+        <Link className="Link" exact="true" to="/">
+          Home
+        </Link>
+        <Link className="Link" to="/members">
+          Members
+        </Link>
+        <Link className="Link" to="/alumni">
+          Alumni
+        </Link>
+        <Link className="Link" to="/archive">
+          Archive
+        </Link>
+        <Link className="Link" to="/events">
+          Events
+        </Link>
+      </div>
+      <a href="/" className="navBtn">
+        Join Discord
+      </a>
+    </nav>
+  );
+}
+
+export default NavBar;

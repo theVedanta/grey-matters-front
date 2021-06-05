@@ -1,0 +1,48 @@
+:root {
+  --white: #fcfcfc;
+  --dgrey: #14191e;
+  --grey: #1c2127;
+  --bggrey: #252b31;
+}
+.side {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  transform: translateX(100%);
+  height: 100vh;
+  z-index: 99;
+  background: var(--dgrey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+.side ul {
+  list-style: none;
+}
+.side li {
+  text-align: center;
+  margin: 3vh 0;
+}
+.side a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 5vw;
+}
+.cross {
+  position: fixed;
+  top: 3vh;
+  z-index: 99999;
+  font-size: 4vh;
+}
+.side-active {
+  transform: translateX(0);
+}
+.bars {
+  position: absolute;
+  top: 2vh;
+  right: 3vh;
+  color: #fff;
+  font-size: 5vw;
+}

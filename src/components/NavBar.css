@@ -1,0 +1,83 @@
+:root {
+  --white: #fcfcfc;
+  --dgrey: #14191e;
+  --grey: #1c2127;
+  --bggrey: #252b31;
+}
+
+body {
+  background-color: var(--dgrey);
+  color: var(--white);
+}
+
+nav {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2vh !important;
+  padding-bottom: 2vh !important;
+}
+.logo {
+  font-size: 1.6vw;
+}
+.Link {
+  color: #fff;
+  margin: 0 1vw;
+  text-decoration: none;
+  font-size: 1.1vw;
+  position: relative;
+}
+.Link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #fff;
+  transition: all 0.3s;
+}
+.Link:hover:after {
+  width: 100%;
+}
+.navBtn {
+  padding: 1vh 2vw;
+  background-color: #fff;
+  color: #000;
+  border-radius: 3px;
+  transition: all 0.3s;
+  border: 1px #fff solid;
+  cursor: pointer;
+  font-size: 1.1vw;
+  text-decoration: none;
+}
+.navBtn:hover {
+  background: transparent;
+  color: #fff;
+}
+@media (max-width: 800px) {
+  .Link,
+  .navBtn {
+    font-size: 2vw;
+  }
+  .navBtn {
+    padding: 0.7vh 3vw;
+  }
+  .logo {
+    font-size: 2.4vw;
+  }
+}
+@media (max-width: 500px) {
+  .Link {
+    display: none;
+  }
+  .logo {
+    font-size: 6vw;
+  }
+  .navBtn {
+    display: none;
+  }
+}

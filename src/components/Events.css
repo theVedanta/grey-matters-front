@@ -1,0 +1,44 @@
+.events.events-container {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 10vh;
+}
+
+.events.header-wrap{
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: 5vh */
+}
+
+.events.header-text {
+    text-align: center;
+    margin-top: 5vh;
+    display: inline-block;
+    align-self: center;
+    border-bottom: 0.5vh var(--white) solid;
+    font-size: 3.5vw;
+}
+
+.events.eventTitle {
+    font-size: 3vw;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.events.event-box {
+    /* background-color: #252B31; */
+    background-color: var(--bggrey);    ;
+    display: flex;
+    padding: 10% 8%;
+    margin-top: 5vh
+}
+
+.events.event-image {
+    margin-right: 2.5vw;
+    height: 30vh
+}
+
+.events.eventContent {
+    font-size: 1.4vw;
+    max-width: 70%
+}
