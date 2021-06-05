@@ -1,12 +1,19 @@
 .footer.footer-container {
   background-color: var(--grey);
   width: 100%;
-  margin-top: 7vh;
 }
 
 .footer.footer-wrap {
   margin: 0 10vw;
   padding: 5vh 0;
+  display: flex;
+  justify-content: space-between;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+}
+
+.footer.footer-text {
+  background-color: aqua;
 }
 
 .footer.header {
@@ -16,7 +23,8 @@
 
 .footer.socials-wrap {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .footer p {
@@ -30,4 +38,17 @@
 
 .footer.socials a {
   margin: 0 0.5vw;
+}
+
+/* Media Queries  */
+
+@media (max-width: 1200px) {
+  /* .footer.header {
+    font-size: 3vw
+  } */
+
+  .footer.footer-wrap{
+    flex-direction: column;
+    justify-content: center;
+  }
 }

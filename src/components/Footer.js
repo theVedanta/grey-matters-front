@@ -9,22 +9,21 @@ function Footer() {
   return (
       <div className="footer footer-container">
         <div className="footer footer-wrap">
-          <h2 className="footer header">Powered by <span className="cw">Code Warriors</span></h2>   
-          <div className="footer socials-wrap">
-            <div className="footer para">
+            <div className="footer-text">
+              <h2 className="footer header">Powered by <span className="cw">Code Warriors</span></h2>  
               <p>Mahika, Vedanta- Codimg</p>
               <p>Armaan-wtf</p>       
-            </div>     
-            <div className="footer socials">
-              <a href="https://www.facebook.com/codewarriors/"><FaFacebookSquare style={Iconstyle}/></a>
-              <a href="https://www.instagram.com/codewarriors42/?hl=en"><FaInstagram style={Iconstyle}/></a>
-              <a href="https://github.com/codewarriors42"><FaGithub style={Iconstyle}/></a>
-              <a href="https://www.behance.net/codewarriors"><FaBehance style={Iconstyle}/></a>
-            </div>
-        </div>  
+            </div>    
+            <div className="footer socials-wrap">
+              <div className="footer socials">
+                <a href="https://www.facebook.com/codewarriors/"><FaFacebookSquare style={Iconstyle}/></a>
+                <a href="https://www.instagram.com/codewarriors42/?hl=en"><FaInstagram style={Iconstyle}/></a>
+                <a href="https://github.com/codewarriors42"><FaGithub style={Iconstyle}/></a>
+                <a href="https://www.behance.net/codewarriors"><FaBehance style={Iconstyle}/></a>
+              </div>
+            </div>  
         </div>
       </div>
-  )
-}
+)}
 
 export default Footer

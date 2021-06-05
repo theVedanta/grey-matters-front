@@ -18,8 +18,8 @@ function NavBar() {
         <Link className="Link" to="/archive">
           Archive
         </Link>
-        <Link className="Link" to="/events">
-          Events
+        <Link className="Link" to="/announcements">
+          Announcements
         </Link>
       </div>
       <a href="/" className="navBtn">

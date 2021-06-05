@@ -1,9 +1,10 @@
 import React from 'react'
+import ComingSoon from './ComingSoon'
 
 function Archive() {
     return (
         <>
-           <h1>Archive page</h1> 
+           <ComingSoon />
         </>
     )
 }

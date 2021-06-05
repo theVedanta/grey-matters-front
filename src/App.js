@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 import Members from "./components/Members";
 import Alumni from "./components/Alumni";
 import Archive from "./components/Archive";
-import Events from "./components/Events";
+import Announcements from "./components/Announcements";
 import Sidebar from "./components/Sidebar";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -21,7 +21,7 @@ const App = () => {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/archive" component={Archive} />
-          <Route path="/events" component={Events} />
+          <Route path="/announcements" component={Announcements} />
           <Route path="/members" component={Members} />
           <Route path="/alumni" component={Alumni} />
         </Switch>

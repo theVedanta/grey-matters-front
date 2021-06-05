@@ -11,9 +11,65 @@
 
 .faq.faq-wrap {    
     margin-left: 10vw;
-    margin-top: 8vh
+    margin-top: 5vh;
+    margin-bottom: 5vw
 }
 
 .faq.faq-header {    
     font-size: 2.5vw;
+    margin-bottom: 5vh;
+}
+
+.faq.faq-div {
+}
+
+.faq.faq-iconWrap {
+    /* display: flex;
+    direction: column;
+    justify-content: center; */
+}
+
+.faq.faq-div {    
+    background-color: var(--bggrey);
+    margin: 2.5vh 0;
+    width: 70%;
+    padding: 1.7vh 1vh;
+}
+
+.faq.faq-question {
+    display: flex;
+    font-size: 0.75vw;
+    border-radius: 5px;
+}
+
+.faq.faq-q {
+    margin-left: 1vw;
+    display: flex;
+    direction: column;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.faq.faq-icon{
+    height: 1.8vw;
+    /* margin-bottom: -1.3vw; */
+    margin-left: 1vw
+}
+
+.faq.faq-answer {
+    margin-left: 4.5vw
+}
+
+.hide {
+    display: none;
+    overflow: hidden;
+}
+
+.faq.faq-text {
+    font-size: 2vw;
+    margin: 2.5vw 0;
+}
+
+.faq.faq-email{
+    color: var(--white);
 }

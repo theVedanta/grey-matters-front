@@ -1,0 +1,17 @@
+.soon.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+}
+
+.soon.wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.soon.header {
+    vertical-align: middle;
+    font-size: 3.5vw;
+    /* transform: translate(-50%, -50%); */
+}
