@@ -44,5 +44,11 @@
   top: 2vh;
   right: 3vh;
   color: #fff;
+  display: none;
   font-size: 5vw;
+}
+@media (max-width: 500px) {
+  .bars {
+    display: inline-block;
+  }
 }
