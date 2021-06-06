@@ -22,11 +22,7 @@ function NavBar() {
           Announcements
         </Link>
       </div>
-      <a
-        target="_blank"
-        href="https://discord.gg/TESjp2sNFd"
-        className="navBtn"
-      >
+      <a href="/" className="navBtn">
         Join Discord
       </a>
     </nav>

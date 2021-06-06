@@ -5,11 +5,8 @@
 }
 
 .home.top-container {
-    display: flex;
-    justify-content: space-between;
     margin: 2vh 0;
     background-color: var(--dgrey);
-    height: 80vh
 }
 
 .home.top-text-wrap {
@@ -23,7 +20,6 @@
 }
 
 .home.top-image {
-    margin-right: 17vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,4 +80,101 @@
   right: 0vw;
   height: 75vh;
   margin-top: 3vh;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 1200px) {
+    .home.top-container {
+        height: 80vh;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .home.top-image {
+        margin-right: 17vw;
+    }
+}
+
+@media (max-width: 1200px) {
+    .home.svg {
+        display: none;
+    } 
+
+    .home.top-text-wrap{
+        text-align: center;
+        flex-direction: row;
+        margin-top: 8vh;
+    }
+
+    .home.top-text {
+        margin: 0 auto;
+    }
+
+    .home.headerTop-1{
+        font-size: 6.5vw
+    }
+
+    .home.headerTop-2 {
+        font-size: 5.5vw;
+    }
+
+    .home.headerTop-3{
+        font-size: 5vw;
+        margin-bottom: 6vw;
+    }
+
+    .home.learnMore{
+        padding: 0.9vw 2.5vw;
+        border-radius: 5px;
+        font-size: 3vw;
+        border: 2px #fff solid;
+    }
+
+    .home.top-image-wrap {
+        margin: 0 auto;
+        margin: 7vh 0;
+        align-self: center;
+        box-shadow: -2px -2px 8px 3px var(--grey);
+    }
+
+    .home.header-image{
+        margin: 0 auto;
+        height: 28vw;
+        width: 28vw
+    }
+}
+
+@media (max-width: 450px) {
+    .home.headerTop-1{
+        font-size: 8vw
+    }
+
+    .home.headerTop-2 {
+        font-size: 7vw;
+    }
+
+    .home.headerTop-3{
+        font-size: 6.5vw;
+        margin-bottom: 8.5vw;
+    }
+
+    .home.learnMore{
+        padding: 1.5vw 3vw;
+        border-radius: 5px;
+        font-size: 4vw;
+        border: 0.5px #fff solid;
+    }
+
+    .home.top-image-wrap {
+        margin: 5vh 0;
+        box-shadow: -1px -1px 4px 2px var(--grey);
+    }
+
+    .home.header-image{
+        margin: 0 auto;
+        height: 40vw;
+        width: 40vw
+    }
+
 }

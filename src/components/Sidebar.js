@@ -33,8 +33,8 @@ const Sidebar = () => {
             </Link>
           </li>
           <li>
-            <Link onClick={triggerSide} to="/events">
-              Events
+            <Link onClick={triggerSide} to="/announcements">
+              Announcements
             </Link>
           </li>
           <li>

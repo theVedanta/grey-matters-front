@@ -38,3 +38,46 @@
   height: 80vh;
   margin-top: 15vh;
 }
+
+@media (max-width: 1200px ) {
+
+    .about .about-wrap {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .about.headerText {
+        font-size: 6vw;
+    }
+
+    .about.about-text { 
+        max-width: 90%;
+        margin-top: 1vh;
+    }
+
+    .about.para {
+        font-size: 3.5vw
+    }
+
+    .about.image-wrap {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 8vh;
+    }
+
+    .about.about.about-image:last-of-type {
+        margin-top: 5vh;
+    }
+}
+
+@media (max-width: 450px) {
+    .about.about-text {
+        max-width: 95%;
+    }
+    .about.headerText {
+        font-size: 9.5vw
+    }
+
+    .about.para {
+        font-size: 5vw;
+    }
+}

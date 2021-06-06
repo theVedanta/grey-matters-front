@@ -20,7 +20,6 @@ img {
   object-fit: cover;
 }
 #root {
-  width: 100vw;
   overflow-x: hidden;
 }
 h1,

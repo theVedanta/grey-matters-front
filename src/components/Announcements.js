@@ -21,7 +21,7 @@ function Events() {
   return (
     <div className="events events-container">
       <div className="events header-wrap">
-        <h1 className="events header-text">Announcemnets</h1>
+        <h1 className="events header-text">Announcements</h1>
       </div>
       {events.map((event) => {
         return (
