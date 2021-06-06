@@ -56,12 +56,12 @@
   border-radius: 50%;
 }
 .memberCard h3 {
-  font-size: 1.1vw;
+  font-size: 1.4vw;
   font-weight: 600;
   margin-top: 3vh;
 }
 .memberCard h4 {
-  font-size: 0.9vw;
+  font-size: 1.1vw;
   font-weight: 400;
   margin: 1vh 0;
 }
@@ -77,7 +77,7 @@
 }
 
 /* Media */
-@media (max-width: 800px) {
+@media (max-width: 1030px) {
   .pageHead {
     font-size: 5vw;
   }

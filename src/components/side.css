@@ -47,7 +47,7 @@
   display: none;
   font-size: 5vw;
 }
-@media (max-width: 500px) {
+@media (max-width: 1030px) {
   .bars {
     display: inline-block;
   }

@@ -13,22 +13,36 @@ const Sidebar = () => {
         <FaTimes className="cross" onClick={triggerSide} />
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link onClick={triggerSide} to="/">
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/">Members</Link>
+            <Link onClick={triggerSide} to="/members">
+              Members
+            </Link>
           </li>
           <li>
-            <Link to="/">Alumni</Link>
+            <Link onClick={triggerSide} to="/alumni">
+              Alumni
+            </Link>
           </li>
           <li>
-            <Link to="/">Archive</Link>
+            <Link onClick={triggerSide} to="/archive">
+              Archive
+            </Link>
           </li>
           <li>
-            <Link to="/">Events</Link>
+            <Link onClick={triggerSide} to="/events">
+              Events
+            </Link>
           </li>
           <li>
-            <a href="/" className="sideBtn">
+            <a
+              target="_blank"
+              href="https://discord.gg/TESjp2sNFd"
+              className="sideBtn"
+            >
               Join Discord
             </a>
           </li>
