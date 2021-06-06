@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./Faq.css"
-import {AiOutlinePlusCircle} from 'react-icons/ai';
+import {FaInstagram, FaEnvelope, FaFacebookSquare} from 'react-icons/fa';
 import { IconBase } from "react-icons";
+import { withRouter } from "react-router-dom";
 
 function Faq() {
 
@@ -17,26 +18,7 @@ function Faq() {
         setFaqs(faqs.faqs);
     }
 
-    let icons = document.querySelector("div.faq-icon")
-    // console.log(icon)
-
-    // for (let icon of icons) {
-    // icon.addEventListener("click", () => {
-    //     icon.style.color = "red"
-    //   });
-    // }
-
-    // icons.onclick = display = () => {
-
-    // }
-
-    function display(icon) {
-        icon.onclick = () => {
-            icon.classList.toggle("hide")
-        }
-    }
-
-    // console.log(faqs)
+    let SocialStyles = {color: "white", fontSize: "1.5vw", margin: "0 0.3vw"}
 
     return (
         <div className="faq faq-container">
@@ -50,14 +32,21 @@ function Faq() {
                                 <div className="faq faq-iconWrap">
                                     <img src={process.env.PUBLIC_URL + 'images/plus.png'} className="faq faq-icon" />
                                 </div>
-                                <h1 className="faq faq-q">{faq.question}</h1>
+                                <p className="faq faq-q">{faq.question}</p>
                             </div>
                             <div className="faq faq-answer hide">{faq.answer}</div>
                         </div>
                         )
                     })}
                 </div>
-                <h1 className="faq faq-text">Got more questions? <a  className="faq faq-email" href = "mailto: team@greymattersdpsvk.org">Contact Us</a></h1>
+                <p className="faq faq-text">Got more questions? <a  className="faq faq-email" href = "mailto: greymattersdps@gmail.com">Contact Us</a></p>
+                <div className="faq connect"><p>Connect with us on</p>
+                    <span className="faq socials">
+                        <a href="https://www.instagram.com/grey._.matters/" target="_blank"><FaInstagram style={SocialStyles} /></a>
+                        <a href="mailto: greymattersdps@gmail.com" target="_blank"><FaEnvelope style={SocialStyles} /></a>
+                        <a href="https://www.facebook.com/GreyMattersDPSVK" target="_blank"><FaFacebookSquare style={SocialStyles} /></a>
+                    </span>
+                </div>
             </div>
         </div>
     )
