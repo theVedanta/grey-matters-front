@@ -40,20 +40,29 @@
   margin: 0 0.5vw;
 }
 
+.cw {
+  font-family: cw;
+  font-weight: 100;
+}
+.socials a svg {
+  font-size: 1.5vw;
+  margin: 0 0.2vw;
+}
+
 /* Media Queries  */
 
 @media (min-width: 1200px) {
-  .footer.media.footer.socials-wrap{
+  .footer.media.footer.socials-wrap {
     display: none;
   }
 }
 
 @media (max-width: 1200px) {
-  .footer.big.footer.socials-wrap{
+  .footer.big.footer.socials-wrap {
     display: none;
   }
 
-  .footer.footer-wrap{
+  .footer.footer-wrap {
     justify-content: center;
     padding-bottom: 2.8vh;
   }
@@ -64,27 +73,35 @@
     margin-bottom: 1vw;
   }
 
-  .footer.para{
+  .footer.para {
     text-align: center;
     font-size: 2.5vw;
   }
 
-  .footer.para:first-of-type{
-    margin-top: 5vw
+  .footer.para:first-of-type {
+    margin-top: 5vw;
   }
 
   .footer.socials {
     text-align: center;
-    margin-top: 3vw;
+    margin: 2vh 0;
+  }
+  .socials a svg {
+    font-size: 3vw;
+    margin: 0 0.8vw;
   }
 }
 
 @media (max-width: 450px) {
   .footer.header {
-    font-size: 4.5vw
+    font-size: 4.5vw;
   }
 
   .footer.para {
-    font-size: 3.8vw
+    font-size: 3.8vw;
+  }
+  .socials a svg {
+    font-size: 4vw;
+    margin: 0 1vw;
   }
 }
