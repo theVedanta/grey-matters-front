@@ -1,6 +1,6 @@
 :root {
   --white: #fcfcfc;
-  --dgrey: #14191e;
+  --dgrey: #15191e;
   --grey: #1c2127;
   --bggrey: #252b31;
 }
@@ -23,6 +23,7 @@ nav {
 .logo {
   font-size: 1.6vw;
 }
+
 .Link {
   color: #fff;
   margin: 0 1vw;

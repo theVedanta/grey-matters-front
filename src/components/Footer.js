@@ -36,7 +36,7 @@ function Footer() {
             </div>
           </div>
 
-          <p className="footer para">Mahika, Vedanta- Codimg</p>
+          <p className="footer para">Mahika, Vedanta- Coding</p>
           <p className="footer para">Armaan- Designing</p>
         </div>
         <div className="footer big socials-wrap">

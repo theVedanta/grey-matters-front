@@ -85,20 +85,20 @@
     width: 50%;
   }
   .memberCard .img {
-    width: 16vw;
-    height: 16vw;
+    width: 24vw;
+    height: 24vw;
   }
   .memberCard h3 {
-    font-size: 2.1vw;
+    font-size: 3vw;
   }
   .memberCard h4 {
-    font-size: 1.9vw;
+    font-size: 2.5vw;
     margin: 1.2vh 0;
   }
   .memberCard a {
-    font-size: 2.4vw;
+    font-size: 2.2vw;
     color: #fff;
-    margin: 0 1vw;
+    margin: 0 0.5vw;
   }
 }
 @media (max-width: 500px) {
@@ -107,13 +107,14 @@
   }
   .memberCard {
     width: 100%;
+    margin-bottom: 7vh
   }
   .memberCard .img {
-    width: 32vw;
-    height: 32vw;
+    width: 33vw;
+    height: 33vw;
   }
   .memberCard h3 {
-    font-size: 4.1vw;
+    font-size: 4.5vw;
   }
   .memberCard h4 {
     font-size: 3.4vw;
