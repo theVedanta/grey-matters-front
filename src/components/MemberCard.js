@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebook, FaGithub, FaTwitter, FaLinkedin, FaYoutube, FaEnvelope, FaInstagram } from "react-icons/fa";
+import { FaFacebookSquare, FaGithub, FaTwitter, FaLinkedin, FaYoutube, FaEnvelope, FaInstagram, FaRedditSquare} from "react-icons/fa";
 
 const MemberCard = ({ img, name, post, socials, index, id }) => {
   return (
@@ -29,19 +29,21 @@ const MemberCard = ({ img, name, post, socials, index, id }) => {
 
   function checkIcon(platform) {
     if (platform == "facebook") {
-      return <FaFacebook />;
+      return <FaFacebookSquare />;
     } else if (platform == "twitter") {
       return <FaTwitter />;
     } else if (platform == "github") {
       return <FaGithub />;
     } else if (platform == "linkedin") {
       return <FaLinkedin />;
-    } else if (platform = "youtube") {
+    } else if (platform == "youtube") {
       return <FaYoutube />;
-    } else if  (platform = "mail") {
+    } else if  (platform == "mail") {
       return <FaEnvelope />;
-    } else if (platform = "instagram") {
+    } else if (platform == "instagram" || platform == "insta") {
       return <FaInstagram />;
+    } else if (platform == "reddit") {
+      return <FaRedditSquare />
     }
   }
 };
