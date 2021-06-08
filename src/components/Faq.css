@@ -43,10 +43,16 @@
   height: 1.8vw;
   /* margin-bottom: -1.3vw; */
   margin-left: 1vw;
+  cursor: pointer;
 }
 
 .faq.faq-answer {
-  margin-left: 4.5vw;
+  margin: 2vh 0;
+  margin-bottom: 1vh;
+  margin-left: 4vw;
+  font-size: 1vw;
+  padding-right: 4vw;
+  line-height: 3vh;
 }
 
 .hide {
@@ -102,7 +108,7 @@
     margin-top: 4vh;
     margin-bottom: 3vh;
   }
-  
+
   .faq .connect {
     font-size: 3.5vw;
   }
@@ -128,7 +134,7 @@
 
   .faq.faq-text {
     font-size: 5vw;
-    margin-bottom: 2vh
+    margin-bottom: 2vh;
   }
   .connect,
   .connect svg {

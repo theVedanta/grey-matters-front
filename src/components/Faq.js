@@ -28,8 +28,9 @@ function Faq() {
                 <div className="faq faq-question">
                   <div className="faq faq-iconWrap">
                     <img
-                      src={process.env.PUBLIC_URL + "images/plus.png"}
+                      src="/images/plus.png"
                       className="faq faq-icon"
+                      onClick={(e) => showAns(e)}
                     />
                   </div>
                   <p className="faq faq-q">{faq.question}</p>
@@ -62,6 +63,12 @@ function Faq() {
       </div>
     </div>
   );
+
+  function showAns(e) {
+    e.target.parentElement.parentElement.nextElementSibling.classList.toggle(
+      "hide"
+    );
+  }
 }
 
 export default Faq;
