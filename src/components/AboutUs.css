@@ -1,83 +1,89 @@
 .about.about-container {
-    background-color: var(--grey);
+  background-color: var(--grey);
 }
 
-.about.about-text{
-    text-align: center;
-    max-width: 40vw;
-    margin: 0 auto;
-    padding-top: 8vh
+.about.about-text {
+  text-align: center;
+  max-width: 40vw;
+  margin: 0 auto;
+  padding-top: 8vh;
+}
+.about.about-wrap {
+  position: relative;
 }
 
 .about.headerText {
-    font-size: 3.5vw;
+  font-size: 3.5vw;
 }
 
 .about.para {
-    text-align: center;
-    margin-top: 3vh;
-    font-size: 1.2vw
+  text-align: center;
+  margin-top: 3vh;
+  font-size: 1.2vw;
 }
 
 .about.image-wrap {
-    margin-top: 8vh;
-    padding-bottom: 25vh;
-    display: flex;
-    justify-content: space-evenly;
+  margin-top: 8vh;
+  padding-bottom: 25vh;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .about.about-image {
-    height: 35vh
+  height: 35vh;
+  z-index: 3;
 }
 
 .about.svg {
   position: absolute;
-  /* bottom: 7vh; */
-  left: -25vw;
-  right: 1vw;
-  height: 80vh;
-  margin-top: 15vh;
+  left: 0;
+  top: 0;
+  width: 100%;
+  margin-top: 16vh;
+  z-index: 1;
 }
 
-@media (max-width: 1200px ) {
+@media (max-width: 1200px) {
+  .about .about-wrap {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .about.headerText {
+    font-size: 6vw;
+  }
 
-    .about .about-wrap {
-        width: 80%;
-        margin: 0 auto;
-    }
-    .about.headerText {
-        font-size: 6vw;
-    }
+  .about.about-text {
+    max-width: 90%;
+    margin-top: 1vh;
+  }
 
-    .about.about-text { 
-        max-width: 90%;
-        margin-top: 1vh;
-    }
+  .about.para {
+    font-size: 3.5vw;
+  }
 
-    .about.para {
-        font-size: 3.5vw
-    }
+  .about.image-wrap {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 8vh;
+  }
 
-    .about.image-wrap {
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 8vh;
-    }
-
-    .about.about.about-image:last-of-type {
-        margin-top: 5vh;
-    }
+  .about.about.about-image:last-of-type {
+    margin-top: 5vh;
+  }
+  .about.svg {
+    display: none;
+  }
 }
 
 @media (max-width: 450px) {
-    .about.about-text {
-        max-width: 95%;
-    }
-    .about.headerText {
-        font-size: 9.5vw
-    }
+  .about.about-text {
+    max-width: 95%;
+  }
+  .about.headerText {
+    font-size: 9.5vw;
+  }
 
-    .about.para {
-        font-size: 5vw;
-    }
+  .about.para {
+    font-size: 5vw;
+  }
 }
