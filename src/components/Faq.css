@@ -115,6 +115,9 @@
   .faq .connect a {
     margin: 0vw;
   }
+  .faq.faq-answer {
+    font-size: 2vw;
+  }
 }
 
 @media (max-width: 450px) {
@@ -142,5 +145,8 @@
   }
   .connect a {
     margin: 0 1.2vw;
+  }
+  .faq.faq-answer {
+    font-size: 3vw;
   }
 }
