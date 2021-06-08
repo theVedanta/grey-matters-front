@@ -18,9 +18,16 @@ const MemberCard = ({ img, name, post, socials, index, id }) => {
       <div className="socials">
         {socials.map((social) => {
           return (
-            <a key={socials.indexOf(social)} href={social.URL}>
+            <> {
+              social.platform != "mail" ? 
+              <a key={socials.indexOf(social)} href={social.URL} target= "_blank">
+                {checkIcon(social.platform)}
+              </a> : 
+              <a key={socials.indexOf(social)} href={`mailto: ${social.URL}`} target= "_blank">
               {checkIcon(social.platform)}
             </a>
+            }
+            </>
           );
         })}
       </div>
