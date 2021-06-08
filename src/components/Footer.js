@@ -1,11 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import {
-  FaGithub,
-  FaFacebookSquare,
-  FaBehance,
-  FaInstagram,
-} from "react-icons/fa";
+import { FaFacebookSquare, FaEnvelope, FaInstagram } from "react-icons/fa";
 
 function Footer() {
   const Iconstyle = { color: "white" };
@@ -21,17 +16,26 @@ function Footer() {
 
           <div className="footer media socials-wrap">
             <div className="footer media socials">
-              <a href="https://www.facebook.com/codewarriors/">
-                <FaFacebookSquare style={Iconstyle} />
+              <a
+                href="https://www.instagram.com/grey._.matters/"
+                target="_blank"
+                style={Iconstyle}
+              >
+                <FaInstagram />
               </a>
-              <a href="https://www.instagram.com/codewarriors42/?hl=en">
-                <FaInstagram style={Iconstyle} />
+              <a
+                href="mailto: greymattersdps@gmail.com"
+                target="_blank"
+                style={Iconstyle}
+              >
+                <FaEnvelope />
               </a>
-              <a href="https://github.com/codewarriors42">
-                <FaGithub style={Iconstyle} />
-              </a>
-              <a href="https://www.behance.net/codewarriors">
-                <FaBehance style={Iconstyle} />
+              <a
+                href="https://www.facebook.com/GreyMattersDPSVK"
+                target="_blank"
+                style={Iconstyle}
+              >
+                <FaFacebookSquare />
               </a>
             </div>
           </div>
@@ -41,17 +45,26 @@ function Footer() {
         </div>
         <div className="footer big socials-wrap">
           <div className="footer big socials">
-            <a href="https://www.facebook.com/codewarriors/">
-              <FaFacebookSquare style={Iconstyle} />
+            <a
+              href="https://www.instagram.com/grey._.matters/"
+              target="_blank"
+              style={Iconstyle}
+            >
+              <FaInstagram />
             </a>
-            <a href="https://www.instagram.com/codewarriors42/?hl=en">
-              <FaInstagram style={Iconstyle} />
+            <a
+              href="mailto: greymattersdps@gmail.com"
+              target="_blank"
+              style={Iconstyle}
+            >
+              <FaEnvelope />
             </a>
-            <a href="https://github.com/codewarriors42">
-              <FaGithub style={Iconstyle} />
-            </a>
-            <a href="https://www.behance.net/codewarriors">
-              <FaBehance className="reactIcons" style={Iconstyle} />
+            <a
+              href="https://www.facebook.com/GreyMattersDPSVK"
+              target="_blank"
+              style={Iconstyle}
+            >
+              <FaFacebookSquare />
             </a>
           </div>
         </div>

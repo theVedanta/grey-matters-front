@@ -3,17 +3,23 @@ import "./AboutUs.css";
 
 function AboutUs() {
   return (
-    <div className="about about-container">
+    <div id="abt" className="about about-container">
       <div className=" about about-wrap">
         <img src="/images/about.svg" alt="" className="about svg" />
         <div className="about about-text">
           <h1 className="about headerText">About Us</h1>
           <p className="about para">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.
+            Grey Matters, the quiz club of DPS Vasant Kunj, was established in
+            2006 and has since evolved into a society of prestige and
+            accomplishment. Grey matters is one of Delhi's most ambitious quiz
+            societies. We, the members of Grey matters, follow a particular way
+            of thinking-the philosophy that quizzing ultimately comes down to
+            the pursuit of thought, not just that of knowledge. It’s how one
+            thinks that matters, not what one knows, and the quizzers at Grey
+            Matters represent the same principle in everything they do - be it
+            making quizzes or winning them.What you see here, today, is the
+            culmination of years of effort to rejuvenate DPS Vasant Kunj's
+            vibrant quizzing culture.
           </p>
         </div>
         <div className="about image-wrap">

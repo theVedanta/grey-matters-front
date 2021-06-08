@@ -13,7 +13,13 @@ function Home() {
             <h1 className="home headerTop-1">Grey Matters</h1>
             <h2 className="home headerTop-2">Monochrome Minds,</h2>
             <h3 className="home headerTop-3">We Quiz.</h3>
-            <a className="home learnMore">Learn More</a>
+            <a
+              style={{ textDecoration: "none" }}
+              href="#abt"
+              className="home learnMore"
+            >
+              Learn More
+            </a>
           </div>
         </div>
       </div>

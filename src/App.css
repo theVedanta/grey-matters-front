@@ -20,6 +20,9 @@
 .container {
   padding: 0 7vw;
 }
+html {
+  scroll-behavior: smooth;
+}
 img {
   object-fit: cover;
 }
