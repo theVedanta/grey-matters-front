@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Faq.css";
 import { FaInstagram, FaEnvelope, FaFacebookSquare } from "react-icons/fa";
-import { IconBase } from "react-icons";
-import { withRouter } from "react-router-dom";
 
 function Faq() {
   useEffect(() => {
