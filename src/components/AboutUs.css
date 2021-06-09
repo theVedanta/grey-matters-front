@@ -32,6 +32,7 @@
 .about.about-image {
   height: 35vh;
   z-index: 3;
+  border-radius: 10px;
 }
 
 .about.svg {

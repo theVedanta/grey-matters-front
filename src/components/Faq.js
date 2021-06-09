@@ -28,20 +28,20 @@ function Faq() {
                 <div className="faq faq-question">
                   <div className="faq faq-iconWrap">
                     <img
-                      src="/images/plus.png"
+                      src="/images/chevron.png"
                       className="faq faq-icon"
                       onClick={(e) => showAns(e)}
                     />
                   </div>
                   <p className="faq faq-q">{faq.question}</p>
                 </div>
-                <div className="faq faq-answer hide">{faq.answer}</div>
+                <div className="faq faq-answer">{faq.answer}</div>
               </div>
             );
           })}
         </div>
         <p className="faq faq-text">
-          Got more questions?{" "}
+          Got more questions?
           <a className="faq faq-email" href="mailto: greymattersdps@gmail.com">
             Contact Us
           </a>
@@ -65,8 +65,9 @@ function Faq() {
   );
 
   function showAns(e) {
+    e.target.classList.toggle("rot");
     e.target.parentElement.parentElement.nextElementSibling.classList.toggle(
-      "hide"
+      "faq-active"
     );
   }
 }

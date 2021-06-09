@@ -14,9 +14,6 @@
 }
 
 .faq.faq-div {
-}
-
-.faq.faq-div {
   background-color: var(--bggrey);
   margin: 2.5vh 0;
   width: 70%;
@@ -53,11 +50,21 @@
   font-size: 1vw;
   padding-right: 4vw;
   line-height: 3vh;
+  height: 0;
+  opacity: 0;
+  margin: 0;
+  transition: all 0.3s;
+}
+.rot {
+  transform: rotate(180deg);
 }
 
-.hide {
-  display: none;
-  overflow: hidden;
+.faq.faq-active {
+  height: 100%;
+  opacity: 1;
+  margin: 2vh 0;
+  margin-bottom: 1vh;
+  margin-left: 4vw;
 }
 
 .faq.faq-text {

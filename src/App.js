@@ -9,6 +9,7 @@ import Alumni from "./components/Alumni";
 import Archive from "./components/Archive";
 import Announcements from "./components/Announcements";
 import Sidebar from "./components/Sidebar";
+import Err from "./components/Err";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -24,6 +25,7 @@ const App = () => {
           <Route path="/announcements" component={Announcements} />
           <Route path="/members" component={Members} />
           <Route path="/alumni" component={Alumni} />
+          <Route path="*" exact component={Err} />
         </Switch>
         <Footer />
       </React.Fragment>

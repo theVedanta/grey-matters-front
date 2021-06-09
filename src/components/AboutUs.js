@@ -25,11 +25,11 @@ function AboutUs() {
         <div className="about image-wrap">
           <img
             className="about about-image"
-            src={process.env.PUBLIC_URL + "images/sample.jpg"}
+            src={process.env.PUBLIC_URL + "images/abt1.png"}
           />
           <img
             className="about about-image"
-            src={process.env.PUBLIC_URL + "images/sample.jpg"}
+            src={process.env.PUBLIC_URL + "images/abt2.jpeg"}
           />
         </div>
       </div>
