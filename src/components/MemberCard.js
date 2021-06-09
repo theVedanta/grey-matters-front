@@ -18,7 +18,7 @@ const MemberCard = ({ img, name, post, socials, index, id }) => {
     >
       <div className="img">
         <img
-          src={`https://grey-back.herokuapp.com/img/${img}`}
+          src={`https://grey-matters.herokuapp.com/img/${img}`}
           alt="Member Image"
         />
       </div>
