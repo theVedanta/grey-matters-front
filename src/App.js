@@ -25,7 +25,7 @@ const App = () => {
           <Route path="/announcements" component={Announcements} />
           <Route path="/members" component={Members} />
           <Route path="/alumni" component={Alumni} />
-          <Route path="*" exact component={Err} />
+          <Route path="/*" exact component={Err} />
         </Switch>
         <Footer />
       </React.Fragment>
