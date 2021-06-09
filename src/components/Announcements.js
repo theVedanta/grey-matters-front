@@ -6,12 +6,13 @@ function Events() {
     fetchEvents();
   }, []);
 
-  const [events, setEvents] = useState([]);
+  const [events, setEvents] = useState(["none"]);
 
   async function fetchEvents() {
     const data = await fetch("https://grey-matters.herokuapp.com/events");
 
     const events = await data.json();
+    console.log(events.events);
     setEvents(events.events);
   }
 
@@ -47,7 +48,13 @@ function Events() {
                 <div className="events content-wrap">
                   <p className="events eventContent">{event.content}</p>
                   <div className="events linkwrap">
-                    <a className="events reg-btn" href={event.link} target="_blank">Register Now</a>
+                    <a
+                      className="events reg-btn"
+                      href={event.link}
+                      target="_blank"
+                    >
+                      Register Now
+                    </a>
                   </div>
                 </div>
               </div>

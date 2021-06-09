@@ -13,7 +13,7 @@ function Footer() {
           <p className="footer header">
             Powered by&nbsp;
             <a
-              style={{ color: "rgb(139, 196, 243)", textDecoration: "none" }}
+              style={{ color: "#fff", textDecoration: "none" }}
               href="https://code-warriors.org"
               target="_blank"
               className="cw"
