@@ -10,7 +10,7 @@ function Faq() {
   let [faqs, setFaqs] = useState([]);
 
   async function fetchFaqs() {
-    const data = await fetch("http://grey-back.herokuapp.com/faq", {
+    const data = await fetch("https://grey-back.herokuapp.com/faq", {
       headers: {
         "Access-Control-Allow-Origin": "*",
       },

@@ -42,7 +42,7 @@ function Events() {
               <div className="events event-box">
                 <img
                   className="events event-image"
-                  src={`http://grey-back.herokuapp.com/img/${event.image}`}
+                  src={`https://grey-back.herokuapp.com/img/${event.image}`}
                 />
                 {/* <img className="events event-image" src={process.env.PUBLIC_URL + 'images/logo.png'} /> */}
                 <h2 className="events eventTitle media" key={event._id}>
