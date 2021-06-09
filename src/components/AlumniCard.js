@@ -9,9 +9,8 @@ function AlumniCard() {
   const [alumnis, setAlumnis] = useState([]);
 
   async function fetchAlumnis() {
-    const data = await fetch("https://grey-back.herokuapp.com/alumni", {
+    const data = await fetch("https://grey-matters.herokuapp.com/alumni", {
       headers: {
-        "Content-Type": "application/json",
         "Access-Control-Allow-Origin": "*",
       },
     });

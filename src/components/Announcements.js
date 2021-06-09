@@ -9,9 +9,8 @@ function Events() {
   const [events, setEvents] = useState(["none"]);
 
   async function fetchEvents() {
-    const data = await fetch("https://grey-back.herokuapp.com/events", {
+    const data = await fetch("https://grey-matters.herokuapp.com/events", {
       headers: {
-        "Content-Type": "application/json",
         "Access-Control-Allow-Origin": "*",
       },
     });
@@ -44,7 +43,7 @@ function Events() {
               <div className="events event-box">
                 <img
                   className="events event-image"
-                  src={`https://grey-back.herokuapp.com/img/${event.image}`}
+                  src={`https://grey-matters.herokuapp.com/img/${event.image}`}
                 />
                 {/* <img className="events event-image" src={process.env.PUBLIC_URL + 'images/logo.png'} /> */}
                 <h2 className="events eventTitle media" key={event._id}>
