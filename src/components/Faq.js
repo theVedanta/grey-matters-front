@@ -45,7 +45,7 @@ function Faq() {
           })}
         </div>
         <p className="faq faq-text">
-          Got more questions?
+          Got more questions?&nbsp;
           <a className="faq faq-email" href="mailto: greymattersdps@gmail.com">
             Contact Us
           </a>
