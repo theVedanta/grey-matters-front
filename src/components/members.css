@@ -22,6 +22,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 4vh;
+  min-height: 80vh;
 }
 .memberCard {
   width: 30%;
