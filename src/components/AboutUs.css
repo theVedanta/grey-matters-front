@@ -10,6 +10,7 @@
 }
 .about.about-wrap {
   position: relative;
+  padding-bottom: 6vh;
 }
 
 .about.headerText {

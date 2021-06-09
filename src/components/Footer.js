@@ -11,7 +11,15 @@ function Footer() {
       <div className="footer footer-wrap">
         <div className="footer-text">
           <p className="footer header">
-            Powered by <span className="cw">Code Warriors</span>
+            Powered by&nbsp;
+            <a
+              style={{ color: "rgb(139, 196, 243)", textDecoration: "none" }}
+              href="https://code-warriors.org"
+              target="_blank"
+              className="cw"
+            >
+              Code Warriors
+            </a>
           </p>
 
           <div className="footer media socials-wrap">

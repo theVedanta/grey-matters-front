@@ -28,7 +28,7 @@ function Faq() {
                 <div className="faq faq-question">
                   <div className="faq faq-iconWrap">
                     <img
-                      src="/images/chevron.png"
+                      src="/images/chevron.svg"
                       className="faq faq-icon"
                       onClick={(e) => showAns(e)}
                     />
