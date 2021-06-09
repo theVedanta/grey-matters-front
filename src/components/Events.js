@@ -9,7 +9,7 @@ function Events() {
   const [events, setEvents] = useState([]);
 
   async function fetchEvents() {
-    const data = await fetch("http://localhost:5001/events");
+    const data = await fetch("https://grey-back.herokuapp.com/events");
 
     const events = await data.json();
     setEvents(events.events);
