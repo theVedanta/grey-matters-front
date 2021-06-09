@@ -40,8 +40,10 @@ function Footer() {
             </div>
           </div>
 
-          <p className="footer para">Mahika, Vedanta- Coding</p>
-          <p className="footer para">Armaan- Designing</p>
+          <p className="footer para">
+            Development: Mahika Sehrawat, Vedanta Somnathe
+          </p>
+          <p className="footer para">Design: Armaan Agarwal</p>
         </div>
         <div className="footer big socials-wrap">
           <div className="footer big socials">
