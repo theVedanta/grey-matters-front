@@ -1,5 +1,14 @@
 import React from "react";
-import { FaFacebookSquare, FaGithub, FaTwitter, FaLinkedin, FaYoutube, FaEnvelope, FaInstagram, FaRedditSquare} from "react-icons/fa";
+import {
+  FaFacebookSquare,
+  FaGithub,
+  FaTwitter,
+  FaLinkedin,
+  FaYoutube,
+  FaEnvelope,
+  FaInstagram,
+  FaRedditSquare,
+} from "react-icons/fa";
 
 const MemberCard = ({ img, name, post, socials, index, id }) => {
   return (
@@ -9,7 +18,7 @@ const MemberCard = ({ img, name, post, socials, index, id }) => {
     >
       <div className="img">
         <img
-          src={`https://grey-matters.herokuapp.com/img/${img}`}
+          src={`https://grey-back.herokuapp.com/img/${img}`}
           alt="Member Image"
         />
       </div>
@@ -18,15 +27,25 @@ const MemberCard = ({ img, name, post, socials, index, id }) => {
       <div className="socials">
         {socials.map((social) => {
           return (
-            <> {
-              social.platform != "mail" ? 
-              <a key={socials.indexOf(social)} href={social.URL} target= "_blank">
-                {checkIcon(social.platform)}
-              </a> : 
-              <a key={socials.indexOf(social)} href={`mailto: ${social.URL}`} target= "_blank">
-              {checkIcon(social.platform)}
-            </a>
-            }
+            <>
+              {" "}
+              {social.platform != "mail" ? (
+                <a
+                  key={socials.indexOf(social)}
+                  href={social.URL}
+                  target="_blank"
+                >
+                  {checkIcon(social.platform)}
+                </a>
+              ) : (
+                <a
+                  key={socials.indexOf(social)}
+                  href={`mailto: ${social.URL}`}
+                  target="_blank"
+                >
+                  {checkIcon(social.platform)}
+                </a>
+              )}
             </>
           );
         })}
@@ -45,12 +64,12 @@ const MemberCard = ({ img, name, post, socials, index, id }) => {
       return <FaLinkedin />;
     } else if (platform == "youtube") {
       return <FaYoutube />;
-    } else if  (platform == "mail") {
+    } else if (platform == "mail") {
       return <FaEnvelope />;
     } else if (platform == "instagram" || platform == "insta") {
       return <FaInstagram />;
     } else if (platform == "reddit") {
-      return <FaRedditSquare />
+      return <FaRedditSquare />;
     }
   }
 };
