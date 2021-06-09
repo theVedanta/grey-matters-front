@@ -10,7 +10,7 @@ function Members() {
   const [members, setMembers] = useState([]);
 
   async function fetchMembers() {
-    const data = await fetch("https://grey-matters.herokuapp.com/members", {
+    const data = await fetch("http://grey-back.herokuapp.com/members", {
       headers: {
         "Access-Control-Allow-Origin": "*",
       },
