@@ -44,7 +44,12 @@ function Events() {
                 <h2 className="events eventTitle media" key={event._id}>
                   {event.title}
                 </h2>
-                <p className="events eventContent">{event.content}</p>
+                <div className="events content-wrap">
+                  <p className="events eventContent">{event.content}</p>
+                  <div className="events linkwrap">
+                    <a className="events reg-btn" href={event.link} target="_blank">Register Now</a>
+                  </div>
+                </div>
               </div>
             </React.Fragment>
           );

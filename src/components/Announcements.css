@@ -46,6 +46,23 @@
 .events.eventContent {
   font-size: 1.3vw;
   width: 70%;
+  margin-bottom: 1.8vw;
+}
+
+.events.reg-btn {
+  background-color: var(--white);
+  color: var(--dgrey);
+  padding: 1.3vh 1.5vw;
+  border-radius: 3px;
+  transition: all 0.3s;
+  border: 1px #fff solid;
+  cursor: pointer;
+  font-size: 1.1vw;
+  text-decoration: none;
+}
+.events.reg-btn:hover {
+  background-color: transparent;
+  color: var(--white)
 }
 
 /* MEDIA QUERIES */
@@ -97,9 +114,19 @@
     text-align: center;
     width: 90%;
     margin: 0 auto;
-    margin-top: 2vw;
+    margin-top: 3vw;
     margin-bottom: 5vw;
     font-size: 3vw;
+  }
+  .events.content-wrap {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .events.reg-btn {
+    font-size: 2.5vw;
+    padding: 1.1vh 1.7vw;
   }
 }
 
@@ -118,5 +145,12 @@
 
   .events.eventContent {
     font-size: 4vw;
+    margin-bottom: 4vh;
+    margin-top: 2.5vh
+  }
+
+  .events.reg-btn {
+    font-size: 4vw;
+    padding: 0.7vh 1.7vw;
   }
 }
