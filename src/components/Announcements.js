@@ -9,7 +9,12 @@ function Events() {
   const [events, setEvents] = useState(["none"]);
 
   async function fetchEvents() {
-    const data = await fetch("https://grey-back.herokuapp.com/events");
+    const data = await fetch("https://grey-back.herokuapp.com/events", {
+      headers: {
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*",
+      },
+    });
 
     const events = await data.json();
     console.log(events.events);
