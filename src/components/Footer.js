@@ -10,18 +10,6 @@ function Footer() {
     <div className="footer footer-container">
       <div className="footer footer-wrap">
         <div className="footer-text">
-          <p className="footer header">
-            Powered by&nbsp;
-            <a
-              style={{ color: "#fff", textDecoration: "none" }}
-              href="https://code-warriors.org"
-              target="_blank"
-              className="cw"
-            >
-              Code Warriors
-            </a>
-          </p>
-
           <div className="footer media socials-wrap">
             <div className="footer media socials">
               <a
@@ -49,7 +37,7 @@ function Footer() {
           </div>
 
           <p className="footer para">
-            Development: Mahika Sehrawat, Vedanta Somnathe
+            Development: Vedanta Somnathe, Mahika Sehrawat
           </p>
           <p className="footer para">Design: Armaan Agarwal</p>
         </div>

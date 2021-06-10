@@ -50,7 +50,7 @@ function Faq() {
             Contact Us
           </a>
         </p>
-        <div className="faq connect">
+        {/* <div className="faq connect">
           <p>Connect with us on</p>
           <span className="faq socials">
             <a href="https://www.instagram.com/grey._.matters/" target="_blank">
@@ -63,7 +63,7 @@ function Faq() {
               <FaFacebookSquare style={SocialStyles} />
             </a>
           </span>
-        </div>
+        </div> */}
       </div>
     </div>
   );

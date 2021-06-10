@@ -4,7 +4,13 @@ import "./NavBar.css";
 function NavBar() {
   return (
     <nav className="container">
-      <h3 className="logo">Grey Matters</h3>
+      <Link
+        to="/"
+        style={{ color: "#fff", textDecoration: "none", fontWeight: "900" }}
+        className="logo"
+      >
+        Grey Matters
+      </Link>
       <div className="link-wrap">
         <Link className="Link" exact="true" to="/">
           Home
@@ -22,9 +28,10 @@ function NavBar() {
           Announcements
         </Link>
       </div>
-      <a 
+      <a
         target="_blank"
-        href="https://discord.gg/TESjp2sNFd" className="navBtn"
+        href="https://discord.gg/TESjp2sNFd"
+        className="navBtn"
       >
         Join Discord
       </a>
