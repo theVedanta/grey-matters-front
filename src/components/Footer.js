@@ -37,7 +37,7 @@ function Footer() {
           </div>
 
           <p className="footer para">
-            Powered by{" "}
+            Initiative by Grey Matters, in collaboration with
             <a
               style={{
                 color: "#fff",
