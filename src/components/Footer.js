@@ -37,9 +37,19 @@ function Footer() {
           </div>
 
           <p className="footer para">
-            Development: Vedanta Somnathe, Mahika Sehrawat
+            Powered by{" "}
+            <a
+              style={{
+                color: "#fff",
+                textDecoration: "none",
+                fontWeight: "100",
+              }}
+              className="cw"
+              href="https://code-warriors.org"
+            >
+              Code Warriors
+            </a>
           </p>
-          <p className="footer para">Design: Armaan Agarwal</p>
         </div>
         <div className="footer big socials-wrap">
           <div className="footer big socials">
