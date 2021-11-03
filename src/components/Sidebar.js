@@ -40,7 +40,7 @@ const Sidebar = () => {
           <li>
             <a
               target="_blank"
-              href="https://discord.gg/TESjp2sNFd"
+              href="https://discord.gg/raGFW3SMKd"
               className="sideBtn"
             >
               Join Discord
