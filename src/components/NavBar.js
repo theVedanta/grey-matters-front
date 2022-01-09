@@ -19,6 +19,9 @@ function NavBar() {
                 <Link className="Link" exact="true" to="/">
                     Home
                 </Link>
+                <Link className="Link" to="/announcements">
+                    Announcements
+                </Link>
                 <Link className="Link" to="/members">
                     Members
                 </Link>
@@ -28,9 +31,6 @@ function NavBar() {
                 {/* <Link className="Link" to="/archive">
           Archive
         </Link> */}
-                <Link className="Link" to="/announcements">
-                    Announcements
-                </Link>
             </div>
             <a
                 target="_blank"

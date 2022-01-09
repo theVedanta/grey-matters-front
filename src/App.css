@@ -1,33 +1,35 @@
 @font-face {
-  font-family: Noah;
-  src: url(./fonts/noah-regular.otf);
+    font-family: Noah;
+    src: url(./fonts/noah-regular.otf);
 }
 @font-face {
-  font-family: bold;
-  src: url(./fonts/noah-bold.otf);
+    font-family: bold;
+    src: url(./fonts/noah-bold.otf);
 }
 @font-face {
-  font-family: cw;
-  src: url(./fonts/Jokerman-Regular.ttf);
+    font-family: cw;
+    src: url(./fonts/Jokerman-Regular.ttf);
 }
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  outline: 0;
-  font-family: Noah;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: Noah;
 }
 .container {
-  padding: 0 7vw;
+    padding: 0 7vw;
 }
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 img {
-  object-fit: cover;
+    object-fit: cover;
 }
 #root {
-  overflow-x: hidden;
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100vh;
 }
 h1,
 h2,
@@ -35,5 +37,5 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: bold;
+    font-family: bold;
 }

@@ -1,129 +1,136 @@
 .pageHead {
-  font-size: 3vw;
-  text-align: center;
-  margin: 3vh 0;
-  position: relative;
-  display: inline-block;
-  width: auto;
+    font-size: 3vw;
+    text-align: center;
+    margin: 3vh 0;
+    position: relative;
+    display: inline-block;
+    width: auto;
 }
 .pageHead::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  border-radius: 50px;
-  background: #fff;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    border-radius: 50px;
+    background: #fff;
 }
 .members {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 4vh;
-  min-height: 80vh;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 4vh;
+    min-height: 70vh;
+    margin-bottom: 16vh;
 }
 .memberCard {
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 10vh;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10vh;
 }
 .bigMemberCard {
-  width: 50%;
+    width: 50%;
 }
 .img img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
 }
 .memberCard .img {
-  position: relative;
-  height: 12vw;
-  width: 12vw;
+    position: relative;
+    height: 12vw;
+    width: 12vw;
 }
 .memberCard .img::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 120%;
-  height: 120%;
-  z-index: -1;
-  background: #1b1b1b;
-  border-radius: 50%;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120%;
+    height: 120%;
+    z-index: -1;
+    background: #1b1b1b;
+    border-radius: 50%;
 }
 .memberCard h3 {
-  font-size: 1.4vw;
-  font-weight: 600;
-  margin-top: 3vh;
+    font-size: 1.4vw;
+    font-weight: 600;
+    margin-top: 3vh;
 }
 .memberCard h4 {
-  font-size: 1.1vw;
-  font-weight: 400;
-  margin: 1vh 0;
+    font-size: 1.1vw;
+    font-weight: 400;
+    margin: 1vh 0;
 }
 .memberCard .socials {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .memberCard a {
-  font-size: 1.4vw;
-  color: #fff;
-  margin: 0 0.3vw;
+    font-size: 1.4vw;
+    color: #fff;
+    margin: 0 0.3vw;
 }
 
 /* Media */
 @media (max-width: 1030px) {
-  .pageHead {
-    font-size: 5vw;
-  }
-  .memberCard {
-    width: 50%;
-  }
-  .memberCard .img {
-    width: 28vw;
-    height: 28vw;
-  }
-  .memberCard h3 {
-    font-size: 3vw;
-  }
-  .memberCard h4 {
-    font-size: 2.5vw;
-    margin: 1.2vh 0;
-  }
-  .memberCard a {
-    font-size: 2.2vw;
-    color: #fff;
-    margin: 0 0.5vw;
-  }
+    .pageHead {
+        font-size: 5vw;
+    }
+    .memberCard {
+        width: 50%;
+    }
+    .memberCard .img {
+        width: 28vw;
+        height: 28vw;
+    }
+    .memberCard h3 {
+        font-size: 3vw;
+    }
+    .memberCard h4 {
+        font-size: 2.5vw;
+        margin: 1.2vh 0;
+    }
+    .memberCard a {
+        font-size: 2.2vw;
+        color: #fff;
+        margin: 0 0.5vw;
+    }
+    .members {
+        margin-bottom: 14vh;
+    }
 }
 @media (max-width: 500px) {
-  .pageHead {
-    font-size: 7vw;
-  }
-  .memberCard {
-    width: 100%;
-    margin-bottom: 7vh;
-  }
-  .memberCard .img {
-    width: 39vw;
-    height: 39vw;
-  }
-  .memberCard h3 {
-    font-size: 4.5vw;
-  }
-  .memberCard h4 {
-    font-size: 3.4vw;
-    margin: 1.2vh 0;
-  }
-  .memberCard a {
-    font-size: 4vw;
-    color: #fff;
-    margin: 0 1vw;
-  }
+    .pageHead {
+        font-size: 7vw;
+    }
+    .memberCard {
+        width: 100%;
+        margin-bottom: 7vh;
+    }
+    .memberCard .img {
+        width: 39vw;
+        height: 39vw;
+    }
+    .memberCard h3 {
+        font-size: 4.5vw;
+    }
+    .memberCard h4 {
+        font-size: 3.4vw;
+        margin: 1.2vh 0;
+    }
+    .memberCard a {
+        font-size: 4vw;
+        color: #fff;
+        margin: 0 1vw;
+    }
+    .members {
+        margin-bottom: 12vh;
+    }
 }
