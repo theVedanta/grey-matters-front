@@ -5,18 +5,13 @@ import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Members from "./components/Members";
 import Alumni from "./components/Alumni";
-import Archive from "./components/Archive";
+// import Archive from "./components/Archive";
 import Announcements from "./components/Announcements";
 import Sidebar from "./components/Sidebar";
 import Err from "./components/Err";
 import Red from "./components/Red";
 
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Redirect,
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 const App = () => {
     return (
@@ -26,7 +21,7 @@ const App = () => {
                 <Sidebar />
                 <Switch>
                     <Route path="/" exact component={Home} />
-                    <Route path="/archive" exact component={Archive} />
+                    {/* <Route path="/archive" exact component={Archive} /> */}
                     <Route
                         path="/announcements"
                         exact

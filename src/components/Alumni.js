@@ -1,13 +1,8 @@
-import React, {useEffect, useState} from 'react'
-import AlumniCard from './AlumniCard'
-import ComingSoon from './ComingSoon'
-import "./Alumni.css"
+import AlumniCard from "./AlumniCard";
+import "./Alumni.css";
 
 function Alumni() {
-
-    return (
-        <ComingSoon />
-    )
+    return <AlumniCard />;
 }
 
-export default Alumni; 
+export default Alumni;
