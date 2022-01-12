@@ -34,7 +34,7 @@ function NavBar() {
             </div>
             <a
                 target="_blank"
-                href="https://discord.gg/raGFW3SMKd"
+                href="https://discord.io/greymatters21"
                 className="navBtn"
             >
                 Join Discord

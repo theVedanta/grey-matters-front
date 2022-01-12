@@ -27,11 +27,11 @@ const Sidebar = () => {
               Alumni
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link onClick={triggerSide} to="/archive">
               Archive
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link onClick={triggerSide} to="/announcements">
               Announcements
