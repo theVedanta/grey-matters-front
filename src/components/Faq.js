@@ -3,54 +3,59 @@ import "./Faq.css";
 import { FaInstagram, FaEnvelope, FaFacebookSquare } from "react-icons/fa";
 
 function Faq() {
-  useEffect(() => {
-    fetchFaqs();
-  }, []);
+    useEffect(() => {
+        fetchFaqs();
+    }, []);
 
-  let [faqs, setFaqs] = useState([]);
+    let [faqs, setFaqs] = useState([]);
 
-  async function fetchFaqs() {
-    const data = await fetch("https://grey-back.herokuapp.com/faq", {
-      headers: {
-        "Access-Control-Allow-Origin": "*",
-      },
-    });
-    const faqs = await data.json();
-    setFaqs(faqs.faqs);
-  }
+    async function fetchFaqs() {
+        const data = await fetch("https://grey-mater.onrender.com/faq", {
+            headers: {
+                "Access-Control-Allow-Origin": "*",
+            },
+        });
+        const faqs = await data.json();
+        setFaqs(faqs.faqs);
+    }
 
-  let SocialStyles = { color: "white" };
+    let SocialStyles = { color: "white" };
 
-  return (
-    <div className="faq faq-container">
-      <div className="faq faq-wrap">
-        <h1 className="faq faq-header">Frequently Asked Questions</h1>
-        <div className="units">
-          {faqs.map((faq) => {
-            return (
-              <div className="faq faq-div">
-                <div className="faq faq-question">
-                  <div className="faq faq-iconWrap">
-                    <img
-                      src="/images/chevron.svg"
-                      className="faq faq-icon"
-                      onClick={(e) => showAns(e)}
-                    />
-                  </div>
-                  <p className="faq faq-q">{faq.question}</p>
+    return (
+        <div className="faq faq-container">
+            <div className="faq faq-wrap">
+                <h1 className="faq faq-header">Frequently Asked Questions</h1>
+                <div className="units">
+                    {faqs.map((faq) => {
+                        return (
+                            <div className="faq faq-div">
+                                <div className="faq faq-question">
+                                    <div className="faq faq-iconWrap">
+                                        <img
+                                            src="/images/chevron.svg"
+                                            className="faq faq-icon"
+                                            onClick={(e) => showAns(e)}
+                                        />
+                                    </div>
+                                    <p className="faq faq-q">{faq.question}</p>
+                                </div>
+                                <div className="faq faq-answer">
+                                    {faq.answer}
+                                </div>
+                            </div>
+                        );
+                    })}
                 </div>
-                <div className="faq faq-answer">{faq.answer}</div>
-              </div>
-            );
-          })}
-        </div>
-        <p className="faq faq-text">
-          Got more questions?&nbsp;
-          <a className="faq faq-email" href="mailto: greymattersdps@gmail.com">
-            Contact Us
-          </a>
-        </p>
-        {/* <div className="faq connect">
+                <p className="faq faq-text">
+                    Got more questions?&nbsp;
+                    <a
+                        className="faq faq-email"
+                        href="mailto: greymattersdps@gmail.com"
+                    >
+                        Contact Us
+                    </a>
+                </p>
+                {/* <div className="faq connect">
           <p>Connect with us on</p>
           <span className="faq socials">
             <a href="https://www.instagram.com/grey._.matters/" target="_blank">
@@ -64,16 +69,16 @@ function Faq() {
             </a>
           </span>
         </div> */}
-      </div>
-    </div>
-  );
-
-  function showAns(e) {
-    e.target.classList.toggle("rot");
-    e.target.parentElement.parentElement.nextElementSibling.classList.toggle(
-      "faq-active"
+            </div>
+        </div>
     );
-  }
+
+    function showAns(e) {
+        e.target.classList.toggle("rot");
+        e.target.parentElement.parentElement.nextElementSibling.classList.toggle(
+            "faq-active"
+        );
+    }
 }
 
 export default Faq;
