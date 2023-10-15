@@ -10,7 +10,7 @@ function Members() {
     const [members, setMembers] = useState([]);
 
     async function fetchMembers() {
-        const data = await fetch("https://grey-mater.onrender.com/members", {
+        const data = await fetch("https://grey-matters-backend.onrender.com/members", {
             headers: {
                 "Access-Control-Allow-Origin": "*",
             },

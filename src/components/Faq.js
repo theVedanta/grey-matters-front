@@ -10,7 +10,7 @@ function Faq() {
     let [faqs, setFaqs] = useState([]);
 
     async function fetchFaqs() {
-        const data = await fetch("https://grey-mater.onrender.com/faq", {
+        const data = await fetch("https://grey-matters-backend.onrender.com/faq", {
             headers: {
                 "Access-Control-Allow-Origin": "*",
             },

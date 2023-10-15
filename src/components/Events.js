@@ -9,7 +9,7 @@ function Events() {
     const [events, setEvents] = useState([]);
 
     async function fetchEvents() {
-        const data = await fetch("https://grey-mater.onrender.com/events");
+        const data = await fetch("https://grey-matters-backend.onrender.com/events");
 
         const events = await data.json();
         setEvents(events.events);
@@ -30,7 +30,7 @@ function Events() {
                             {event.title}
                         </h2>
                         <div className="events event-box">
-                            {/* <img className="events event-image" src={`https://grey-mater.onrender.com/img/${event.image}`} /> */}
+                            {/* <img className="events event-image" src={`https://grey-matters-backend.onrender.com/img/${event.image}`} /> */}
                             <img
                                 className="events event-image"
                                 src={process.env.PUBLIC_URL + "images/logo.png"}
@@ -50,5 +50,5 @@ export default Events;
 
 // { <h2 className="eventName" key={event._id}>{event.title}</h2>
 // <p className="eventEvent">{event.content}</p>
-// <img src={`https://grey-mater.onrender.com/img/${event.image}`}/>
+// <img src={`https://grey-matters-backend.onrender.com/img/${event.image}`}/>
 // <p>{event.image}</p>}

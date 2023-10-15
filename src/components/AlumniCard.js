@@ -10,7 +10,7 @@ const AlumniCard = () => {
     const [alumnis, setAlumnis] = useState([]);
 
     async function fetchAlumnis() {
-        const data = await fetch("https://grey-mater.onrender.com/alumni", {
+        const data = await fetch("https://grey-matters-backend.onrender.com/alumni", {
             headers: {
                 "Access-Control-Allow-Origin": "*",
             },

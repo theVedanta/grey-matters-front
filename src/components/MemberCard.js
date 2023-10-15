@@ -18,7 +18,7 @@ const MemberCard = ({ img, name, post, socials, index, id }) => {
         >
             <div className="img">
                 <img
-                    src={`https://grey-mater.onrender.com/img/${img}`}
+                    src={`https://grey-matters-backend.onrender.com/img/${img}`}
                     alt="Member Image"
                 />
             </div>
