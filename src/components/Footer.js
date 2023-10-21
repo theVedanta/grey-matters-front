@@ -37,18 +37,7 @@ function Footer() {
                     </div>
 
                     <p className="footer para">
-                        Initiative by Grey Matters, in collaboration with&nbsp;
-                        <a
-                            style={{
-                                color: "#fff",
-                                textDecoration: "none",
-                                fontWeight: "100",
-                            }}
-                            className="cw"
-                            href="https://code-warriors.org"
-                        >
-                            Code Warriors
-                        </a>
+                        Initiative by Grey Matters
                     </p>
                 </div>
                 <div className="footer big socials-wrap">
@@ -82,3 +71,19 @@ function Footer() {
 }
 
 export default Footer;
+
+// original footer
+//<p className="footer para">
+//Initiative by Grey Matters, in collaboration with&nbsp;
+//<a
+//    style={{
+//        color: "#fff",
+//        textDecoration: "none",
+//        fontWeight: "100",
+//    }}
+//    className="cw"
+//    href="https://code-warriors.org"
+//>
+//    Code Warriors
+//</a>
+//</p>

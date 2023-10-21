@@ -11,8 +11,8 @@ function Home() {
         <div className="home top-text-wrap">
           <div className="home top-text">
             <h1 className="home headerTop-1">Grey Matters</h1>
-            <h2 className="home headerTop-2">Monochrome Minds,</h2>
-            <h3 className="home headerTop-3">We Quiz.</h3>
+            {/* <h2 className="home headerTop-2">Monochrome Minds,</h2> */}
+            <h3 className="home headerTop-3">We Quiz. We Conquer.</h3>
             <a
               style={{ textDecoration: "none" }}
               href="#abt"
